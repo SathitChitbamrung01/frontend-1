@@ -9,6 +9,7 @@ export default function index() {
 
     <Head><title>Meteor</title></Head>
 
+<header>
 <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Meteor</a>
@@ -45,16 +46,75 @@ export default function index() {
     </div>
   </div>
 </nav>
+</header>
 
-
-    <div className="text-center">
-      <Image src="/1.jpg" className="rounded" alt="1" width={250} height={400}/>
+<main>
+<div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active" data-bs-interval={2000}>
+      <img src="Center Game.png" className="rounded" alt="..." width={1550} height={697} />
     </div>
+    <div className="carousel-item" data-bs-interval={2000}>
+      <img src="P1.jpg" className="d-block w-100" alt="..." width={1550} height={697} />
+    </div>
+    <div className="carousel-item" data-bs-interval={2000}>
+      <img src="P2.jpg" className="d-block w-100" alt="..." width={1550} height={697} />
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true" />
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true" />
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br/>
+<center>
+<div className="container marketing">
+  <div className="row">
+    <div className="col-lg-4">
+      <svg className="bd-placeholder-img rounded-circle" width={140} height={140} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
+      <h2 className="fw-normal">عنوان</h2>
+      <p>تذكر دائماً أن الحاسوب لا يمتلك ذكاءً، ولكنه يكتسب الذكاء الاصطناعي من خلال ثلاثة عناصر وظيفية رئيسة، هي: القدرة على التحليل، والقدرة على التأليف، والاستدلال المنطقي.</p>
+      <p><a className="btn btn-secondary" href="#">عرض التفاصيل</a></p>
+    </div>{/* /.col-lg-4 */}
+    <div className="col-lg-4">
+      <svg className="bd-placeholder-img rounded-circle" width={140} height={140} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
+      <h2 className="fw-normal">عنوان آخر</h2>
+      <p>إذا أردنا استخدام الحاسوب الذكي في معالجة اللغة العربية فإننا نجد أنفسنا أمام تحدٍّ كبير، خاصة وأن لغتنا تمتاز بتماسك منظوماتها وتداخلها، ومع ذلك فإن الذكاء الاصطناعي يمكّننا من الحصول على أربعة أنواع من المعالجة، هي: المعالجة الصوتية، والمعالجة الصرفية، والمعالجة النحوية، والمعالجة الدلالية.</p>
+      <p><a className="btn btn-secondary" href="#">عرض التفاصيل</a></p>
+    </div>{/* /.col-lg-4 */}
+    <div className="col-lg-4">
+      <svg className="bd-placeholder-img rounded-circle" width={140} height={140} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
+      <h2 className="fw-normal">عنوان ثالث لتأكيد المعلومة</h2>
+      <p>بفضل بحوث الذكاء الاصطناعي وتقنياته استطعنا الانتقال من مرحلة التعامل مع الفيزيائي إلى مرحلة التعامل مع المنطقي، وقد انعكس هذا الانتقال بصورة إيجابية على الكيفية التي تتعامل بها الشعوب مع لغاتها الحيَّة، وهذا يعني أنه يجب أن ينعكس بصورة إيجابية على كيفية تعاملنا مع لغتنا العربية.</p>
+      <p><a className="btn btn-secondary" href="#">عرض التفاصيل</a></p>
+    </div>{/* /.col-lg-4 */}
+  </div>{/* /.row */}</div>
+  </center>
 
 
-    <div className="text-center"><button type="button" className="btn btn-success">Welcome</button> </div>
+</main>
 
-
+<footer>
+<div>
+  <div className="container">
+    <footer className="py-3 my-4">
+      <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Home</a></li>
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Features</a></li>
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p className="text-center text-body-secondary">© 2023 Company, Inc</p>
+    </footer>
+  </div>
+</div>
+</footer>
     </>
   )
 }
