@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import 'bootstrap/dist/css/bootstrap.css';
+
 import Image from 'next/image';
 
 export default function index() {
@@ -9,9 +9,9 @@ export default function index() {
 
     <Head><title>Meteor</title></Head>
 
-<nav className="navbar navbar-expand-lg bg-body-tertiary">
+<nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="#">Meteor</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -21,11 +21,11 @@ export default function index() {
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+          <a className="nav-link" href="#">About us</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Service
           </a>
           <ul className="dropdown-menu">
             <li><a className="dropdown-item" href="#">Action</a></li>
@@ -35,7 +35,7 @@ export default function index() {
           </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
+          <a className="nav-link disabled">contact</a>
         </li>
       </ul>
       <form className="d-flex" role="search">
