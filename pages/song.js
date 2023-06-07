@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function song() {
   return (
@@ -18,18 +19,18 @@ export default function song() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href=".">Home     <i class="bi bi-house-heart"></i> </a>
+        <Link className="nav-link " href=".">Home     <i class="bi bi-house-heart"></i> </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" a href="about_us">About us   <i class="bi bi-file-earmark-person"></i></a>
+          <Link className="nav-link" a href="about_us">About us   <i class="bi bi-file-earmark-person"></i></Link>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Service
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="song">Song   <i class="bi bi-file-music"></i></a></li>
-            <li><a className="dropdown-item" href="Youtuber">Youtuber     <i class="bi bi-person-square"></i></a></li>
+            <li><Link className="dropdown-item" href="song">Song   <i class="bi bi-file-music"></i></Link></li>
+            <li><Link className="dropdown-item" href="Youtuber">Youtuber     <i class="bi bi-person-square"></i></Link></li>
           </ul>
         </li>
         <li className="nav-item">

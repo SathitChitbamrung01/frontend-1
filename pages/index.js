@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image';
-
+import Link from 'next/link';
 export default function index() {
   return (
     <>
@@ -18,10 +18,10 @@ export default function index() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link "a href=".">Home     <i class="bi bi-house-heart"></i> </a>
+          <Link className="nav-link " href=".">Home     <i class="bi bi-house-heart"></i> </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="about_us">About us   <i class="bi bi-file-earmark-person"></i></a>
+          <Link className="nav-link" href="about_us">About us   <i class="bi bi-file-earmark-person"></i></Link>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
