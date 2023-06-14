@@ -28,8 +28,8 @@ export default function index() {
             Service
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="song">Song   <i class="bi bi-file-music"></i></a></li>
-            <li><a className="dropdown-item" href="Youtuber">Youtuber     <i class="bi bi-person-square"></i></a></li>
+            <li><Link className="dropdown-item" href="song">Song   <i class="bi bi-file-music"></i></Link></li>
+            <li><Link className="dropdown-item" href="Youtuber">Youtuber     <i class="bi bi-person-square"></i></Link></li>
           </ul>
         </li>
         <li className="nav-item">
@@ -76,7 +76,71 @@ export default function index() {
   <p /><h4><b>เว็บไซต์ที่มากไปด้วย Youtuber ที่จะมาให้เสียงหัวเราะ ความสนุก เพลิดเพลินและสนุกสนาน </b></h4><p />
   <p /><h4><b>อีกทั้งยังมี Channel Song หรือก็คือ ช่องที่มากไปด้วยเพลงประเภทต่างๆ ที่จะทำให้เราได้เพลิดเพลินไปกับเสียงเพลง </b></h4><p />
 </div>
+<br/>
+<br/>
+<br/>
+
+<div class="container marketing">
+<div>
+  <div className="row">
+    <div className="col-lg-4">
+      <center><img className="bd-placeholder-img rounded-circle" width={140} height={140} src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/338585293_239829545128899_4220305952545380222_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeGzYyEPVneLzutQt1uQLiO3NzdZQocZNG83N1lChxk0b966mGHCMmXjtByxHYaUMDEHzLIl-3INubQv2_XgYqKd&_nc_ohc=prsgU_8XIOoAX_blz4U&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfBKCNpblXCIWxWBjolMaDdXmnixkt-BG_uZsGYNxWyjTQ&oe=6484518F"/>
+      <h2 className="fw-normal">ทะเล</h2></center> 
+      <p></p>
+      <center><p><Link className="btn btn-secondary" href="#">View details »</Link></p></center>
+    </div>
+    <div className="col-lg-4">
+    <center><img className="bd-placeholder-img rounded-circle" width={140} height={140} src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/294666886_5270433536380653_8262167781483113888_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEHq06TVT52Avb4UpF5IHds3O0g1pbXZSfc7SDWltdlJz6UHXpbZbd6zTto8MET4-MAOF-vr-Gc-JVFdk4R4xob&_nc_ohc=E9PbOYxYZJMAX_JMU1h&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfBGRiS-FhcsgqXiEOrj2pcNprreJWnM6WjwHh2bCeP9cA&oe=64841D22"/>
+    <h2 className="fw-normal">ภูเขา</h2></center>
+      <p></p>
+      <center><p><Link className="btn btn-secondary" href="#">View details »</Link></p></center>
+    </div>
+    <div className="col-lg-4">
+    <center><img className="bd-placeholder-img rounded-circle" width={140} height={140} src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/294507498_5270433143047359_6697456741612438194_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEdz-HY68xGe6YKH6I39Ys1x5yW9J9wI4fHnJb0n3Ajh6uh0Cr945_HVlJ_5M-dLs9BMW3_5lzVNfam_zYmb3Q3&_nc_ohc=oIZFROQWpSUAX9dYdv8&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfAcZ7gk-UKTc9jZk6O17Vie6TpHj1m2DM7UFpWRBiYhag&oe=6485CA75"/>
+    <h2 className="fw-normal">วัด</h2></center>
+      <p></p>
+      <center><p><Link className="btn btn-secondary" href="#">View details »</Link></p></center>
+    </div>
+  </div>
+</div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<div>
+<div class="container marketing">
+<div>
+  <div className="row">
+    <div className="col-lg-4">
+      <center><img className="bd-placeholder-img rounded-circle" width={140} height={140} src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/338585293_239829545128899_4220305952545380222_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeGzYyEPVneLzutQt1uQLiO3NzdZQocZNG83N1lChxk0b966mGHCMmXjtByxHYaUMDEHzLIl-3INubQv2_XgYqKd&_nc_ohc=prsgU_8XIOoAX_blz4U&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfBKCNpblXCIWxWBjolMaDdXmnixkt-BG_uZsGYNxWyjTQ&oe=6484518F"/>
+      <h2 className="fw-normal">ทะเล</h2></center> 
+      <p></p>
+      <center><p><Link className="btn btn-secondary" href="#">View details »</Link></p></center>
+    </div>
+    <div className="col-lg-4">
+    <center><img className="bd-placeholder-img rounded-circle" width={140} height={140} src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/294666886_5270433536380653_8262167781483113888_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEHq06TVT52Avb4UpF5IHds3O0g1pbXZSfc7SDWltdlJz6UHXpbZbd6zTto8MET4-MAOF-vr-Gc-JVFdk4R4xob&_nc_ohc=E9PbOYxYZJMAX_JMU1h&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfBGRiS-FhcsgqXiEOrj2pcNprreJWnM6WjwHh2bCeP9cA&oe=64841D22"/>
+    <h2 className="fw-normal">ภูเขา</h2></center>
+      <p></p>
+      <center><p><Link className="btn btn-secondary" href="#">View details »</Link></p></center>
+    </div>
+    <div className="col-lg-4">
+    <center><img className="bd-placeholder-img rounded-circle" width={140} height={140} src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/294507498_5270433143047359_6697456741612438194_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEdz-HY68xGe6YKH6I39Ys1x5yW9J9wI4fHnJb0n3Ajh6uh0Cr945_HVlJ_5M-dLs9BMW3_5lzVNfam_zYmb3Q3&_nc_ohc=oIZFROQWpSUAX9dYdv8&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfAcZ7gk-UKTc9jZk6O17Vie6TpHj1m2DM7UFpWRBiYhag&oe=6485CA75"/>
+    <h2 className="fw-normal">วัด</h2></center>
+      <p></p>
+      <center><p><Link className="btn btn-secondary" href="#">View details »</Link></p></center>
+    </div>
+  </div>
+</div>
+</div>
+<div>
+</div>
+</div>
+
+
 </center>
+ 
+
 
 
 
