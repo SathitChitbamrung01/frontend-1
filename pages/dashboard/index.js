@@ -14,9 +14,21 @@ export async function getStaticProps() {
   }
 }
 
+
+
 export default function Component({ posts }) {
   const { data: session } = useSession()
+  const router = useRouter()
 
+  const handleDelete = async (id) => {
+    // console.log("ID :",id);
+    fetch('http://localhost:3000/api/users?id=' + id, {
+      method: 'DELETE',
+    })
+    return router.reload('/dasbord')
+  }
+
+  
   if (session) {
     return (
       <>
@@ -71,7 +83,7 @@ export default function Component({ posts }) {
                         <button type="button" className="btn btn-warning">
                           <i className="bi bi-pencil-square"></i>
                         </button>{" "}&nbsp;&nbsp;
-                        <button type="button" className="btn btn-danger">
+                        <button type="button" className="btn btn-danger" onClick={() => handleDelete(post.id)}> 
                           <i className="bi bi-trash3"></i>
                         </button>{" "}
                         </center>
