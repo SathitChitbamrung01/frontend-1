@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from "next/router";
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/users')
+  const res = await fetch('https://06d5-49-229-126-113.ngrok-free.app/api/users')
   const posts = await res.json()
 
   return {
@@ -22,7 +22,7 @@ export default function Component({ posts }) {
 
   const handleDelete = async (id) => {
     // console.log("ID :",id);
-    fetch('http://localhost:3000/api/users?id=' + id, {
+    fetch('https://06d5-49-229-126-113.ngrok-free.app/api/users?id=' + id, {
       method: 'DELETE',
     })
     return router.reload('/dasbord')
